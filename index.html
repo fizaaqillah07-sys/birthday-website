@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HALAMAN PEMBUKA
+    ========================== -->
+
+    <section id="opening" class="page active">
+
+        <div class="gift">🎁</div>
+
+        <h1>Hai kamu! 💗</h1>
+
+        <p>
+            Ada sesuatu yang ingin aku kasih untukmu...
+        </p>
+
+        <button onclick="bukaHadiah()">
+            Buka Hadiah 💝
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         HALAMAN UCAPAN
+    ========================== -->
+
+    <section id="birthday" class="page">
+
+        <div class="cake">🎂</div>
+
+        <h1>Happy Birthday! 🎉</h1>
+
+        <p class="message">
+            Selamat ulang tahun! 💗
+        </p>
+
+        <p>
+            Semoga hari ini menjadi salah satu
+            hari yang paling menyenangkan untukmu.
+        </p>
+
+        <p>
+            Semoga semua hal baik datang kepadamu,
+            satu per satu, dan membuatmu tersenyum.
+            🌷✨
+        </p>
+
+        <p>
+            Jangan lupa untuk selalu bahagia,
+            menjaga diri, dan menikmati setiap
+            hal kecil yang membuatmu senang. 💕
+        </p>
+
+        <button onclick="mulaiGame()">
+            Main Mini Game 🎮
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         MINI GAME
+    ========================== -->
+
+    <section id="game" class="page">
+
+        <h1>🎮 Tangkap Hati!</h1>
+
+        <p>
+            Klik hati sebanyak <b>10 kali</b>!
+        </p>
+
+        <div class="score">
+            Skor: <span id="score">0</span> / 10
+        </div>
+
+        <div id="gameArea">
+
+            <button id="heart" onclick="tangkapHati()">
+                ❤️
+            </button>
+
+        </div>
+
+        <p id="gameMessage"></p>
+
+    </section>
+
+
+    <!-- =========================
+         PESAN TERAKHIR
+    ========================== -->
+
+    <section id="ending" class="page">
+
+        <div class="big-heart">💖</div>
+
+        <h1>Yay! Kamu berhasil! 🎉</h1>
+
+        <p>
+            Kamu berhasil menangkap semua hati! 💕
+        </p>
+
+        <div class="letter">
+
+            <p>
+                Dear kamu,
+            </p>
+
+            <p>
+                Terima kasih sudah menjadi seseorang
+                yang begitu berarti.
+            </p>
+
+            <p>
+                Semoga di umur yang baru ini,
+                kamu mendapatkan banyak kebahagiaan,
+                cerita indah, dan orang-orang
+                yang selalu menyayangimu. 🌷
+            </p>
+
+            <p>
+                Tetap jadi kamu yang hebat,
+                lucu, dan menyenangkan. 💗
+            </p>
+
+            <p>
+                Sekali lagi...
+            </p>
+
+            <h2>
+                HAPPY BIRTHDAY! 🎂🎉💖
+            </h2>
+
+        </div>
+
+        <p class="small">
+            Dibuat dengan ❤️ khusus untukmu.
+        </p>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

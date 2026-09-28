@@ -1,0 +1,305 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #ffeaf3,
+        #fff5f9
+    );
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HALAMAN
+========================= */
+
+.page {
+
+    min-height: 100vh;
+
+    display: none;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+/* halaman yang aktif */
+
+.page.active {
+
+    display: flex;
+
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+h1 {
+
+    color: #ff5c8a;
+
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+}
+
+
+h2 {
+
+    color: #ff5c8a;
+
+    margin-top: 20px;
+
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+p {
+
+    color: #555;
+
+    max-width: 500px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+}
+
+
+.message {
+
+    font-size: 24px;
+
+    color: #ff5c8a;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   EMOJI BESAR
+========================= */
+
+.gift {
+
+    font-size: 100px;
+
+    animation: floating 2s infinite;
+
+}
+
+
+.cake {
+
+    font-size: 100px;
+
+    animation: floating 2s infinite;
+
+}
+
+
+.big-heart {
+
+    font-size: 100px;
+
+    animation: heartbeat 1s infinite;
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    border: none;
+
+    background-color: #ff6f9c;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 20px;
+
+}
+
+
+button:hover {
+
+    background-color: #ff477d;
+
+    transform: scale(1.05);
+
+}
+
+
+/* =========================
+   GAME
+========================= */
+
+.score {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #ff5c8a;
+
+    margin: 15px;
+
+}
+
+
+#gameArea {
+
+    width: 90vw;
+
+    max-width: 600px;
+
+    height: 400px;
+
+    background-color: rgba(255,255,255,0.7);
+
+    border-radius: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 3px solid #ffc1d6;
+
+}
+
+
+/* HATI */
+
+#heart {
+
+    position: absolute;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: none;
+
+    background: none;
+
+    font-size: 45px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    max-width: 500px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.small {
+
+    font-size: 13px;
+
+    margin-top: 25px;
+
+}
+
+
+/* =========================
+   ANIMASI
+========================= */
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
